@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/* Estilo do header */
+header {
+    background-color: #222;
+    padding: 10px 0;
+}
+
+/* Container do nav-bar */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Logo */
+.logo h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Nome do sistema */
+.logoNome {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Botão do login */
+.login-btt button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login-btt button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Menu Mobile */
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+/* Formulário de cadastro */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #1a1a1a;
+}
+
+.cadastro-form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cadastro-form h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box input {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: white;
+}
+
+.box input::placeholder {
+    color: #888;
+}
+
+.btn {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+    }
+}

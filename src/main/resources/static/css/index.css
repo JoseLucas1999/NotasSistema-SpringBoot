@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1e1e1e;  /* Fundo escuro */
+    color: #ccc;  /* Texto claro */
+}
+
+header {
+    background-color: #333;  /* Cabeçalho escuro */
+    padding: 20px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.logoNome {
+    color: #fff;
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;  /* Cor de fundo para a área do login */
+}
+
+.login-form {
+    background-color: #333;  /* Fundo escuro para o formulário */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;  /* Título branco */
+}
+
+.box-user {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.box-user input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;  /* Borda sutil */
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    background-color: #555;  /* Fundo escuro para os inputs */
+    color: #fff;  /* Texto claro */
+    transition: border-color 0.3s ease;
+}
+
+.box-user input:focus {
+    border-color: #3498db;  /* Azul ao focar no campo */
+}
+
+.box-user label {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    font-size: 14px;
+    color: #888;  /* Cor de rótulo mais suave */
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.box-user input:focus + label,
+.box-user input:not(:focus):valid + label {
+    top: -8px;
+    font-size: 12px;
+    color: #3498db;  /* Azul ao focar */
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;  /* Botão azul */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;  /* Azul mais escuro no hover */
+}
+
+.forget {
+    display: inline-block;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.forget:hover {
+    color: #2980b9;  /* Azul mais escuro no hover */
+}
+
+span {
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    color: #888;  /* Texto de aviso mais suave */
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .login-form {
+        width: 80%;
+        padding: 15px;
+    }
+}
