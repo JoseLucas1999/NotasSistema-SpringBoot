@@ -15,7 +15,7 @@ public class Alunos implements Serializable {
     @NotEmpty(message = "O nome não pode estar vazio")
     private String nome;
     @Embedded
-    private Notas notas;
+    private Notas notas = new Notas();
     @Transient
     private double media; // não precisa ser inserido no banco
     @Transient
@@ -26,6 +26,7 @@ public class Alunos implements Serializable {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
 
 	public Alunos(@NotEmpty(message = "O nome não pode estar vazio") String nome, int ra,  Notas notas, double media,String situacao) {
 		super();
