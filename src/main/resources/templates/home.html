@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" 
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema de Notas Home</title>
+<link rel="stylesheet" href="/css/home.css">
+<link rel="stylesheet" href="/css/nav.css">
+</head>
+<body>
+	<header>
+		<nav class="nav-bar">
+			<div class="nav-list">
+				<ul>
+					<li class="nav-item"><a href="/alunos/todos" class="nav-link">Todos Alunos</a></li>
+					<li class="nav-item"><a href="/alunos/aprovados" class="nav-link">Aprovados</a></li>
+					<li class="nav-item"><a href="/alunos/reprovados" class="nav-link">Reprovados</a></li>
+					<li class="nav-item"><a href="/alunos/cadastrar" class="nav-link">Cadastrar Aluno</a></li>
+					<li class="nav-item"><a href="/alunos/pesquisar" class="nav-link">Pesquisar Aluno</a></li>
+					<li class="nav-item"><a href="/alunos/excluir" class="nav-link">Excluir Aluno</a></li>
+				</ul>
+			</div>
+
+			<div class="login-btt">
+				<button>
+					<a href="indexBack">Login</a>
+				</button>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<!-- exibir alunos -->
+		<h1 th:text="${mensagem}"></h1> <!-- Exibe a mensagem "Alunos Aprovados" -->
+		<table>
+			<thead>
+				<tr>
+					<th>RA</th>
+					<th>Nome</th>
+					<th>Nota 1</th>
+					<th>Nota 2</th>
+					<th>Nota 3</th>
+					<th>Nota 4</th>
+					<th>Media</th>
+					<th>Situação</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="aluno : ${alunos}">
+					<td><span th:text="${aluno.ra}"></span></td>
+					<td><span th:text="${aluno.nome}"></span></td>
+					<td><span th:text="${aluno.notas.nota1}"></span></td>
+					<td><span th:text="${aluno.notas.nota2}"></span></td>
+					<td><span th:text="${aluno.notas.nota3}"></span></td>
+					<td><span th:text="${aluno.notas.nota4}"></span></td>
+					<td><span th:text="${aluno.media}"></span></td>
+					<td><span th:text="${aluno.situacao}"></span></td>
+				</tr>
+			</tbody>
+		</table>		
+		<!--  -->
+		
+	</main>
+</body>
+</html>

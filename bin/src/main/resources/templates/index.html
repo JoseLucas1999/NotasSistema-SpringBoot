@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Notas Login</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1><i class="fa-solid fa-school" style="color: #ffffff;"></i></i></h1>
+            </div>
+            <div class="logoNome">Sistema de Notas escolar</div>
+        </nav>
+    </header>
+    <main>
+        <form class="login-form" action="logar">
+            <h2>Login</h2>
+                <div class="box-user">
+                    <input type="text" name="usuario" required>
+                    <label for="usuario" >Usuário</label>
+                </div>
+                <div class="box-user">
+                    <input type="password" name="senha" required>
+                    <label for="senha">Senha</label>
+                </div>
+                
+                <span id="message"></span>
+          
+
+                <input type="submit" class="btn" value="Entrar"><br><br> 
+                <a href="nologin" class="btn">Entrar Sem Logar</a>
+                <br><br>
+                <div>
+                <a href="#" class="forget">Esqueceu a Senha?</a>
+                </div>
+                
+                <span>Login: lucas | Senha: 12345</span>
+        </form>
+    </main>
+	<script src="assents/js/index.js"></script>
+</body>
+</html>

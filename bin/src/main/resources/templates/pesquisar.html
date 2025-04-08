@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/pesquisar.css">
+
+<title>Sistema de Notas - Pesquisar Aluno</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logoNome">Pesquisar Aluno</div>
+            <div class="login-btt"> <button><a href="backHome">Home</a></button> </div>
+        </nav>
+    </header>
+    
+    <main>
+        <form class="cadastro-form" action="pesquisar" method="get">
+            <h2>Pesquisar Aluno</h2>
+
+            <div class="box">
+                <input type="number" name="ra" required placeholder="Digite o RA">
+            </div>
+
+            <input type="submit" class="btn" value="Pesquisar"> 
+        </form>
+
+        <!-- Exibi��o dos alunos encontrados, s� aparece ap�s pesquisa -->
+            <h1>titulo</h1>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>RA</th>
+                        <th>Nome</th>
+                        <th>Nota 1</th>
+                        <th>Nota 2</th>
+                        <th>Nota 3</th>
+                        <th>Nota 4</th>
+                        <th>M�dia</th>
+                        <th>Situa��o</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td></td>
+
+                        </tr>
+
+                </tbody>
+            </table>
+    </main>
+
+    <script src="assents/js/home.js"></script>
+</body>
+</html>

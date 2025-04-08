@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/excluir.css">
+    <link rel="stylesheet" href="/css/nav.css">
+<title>Sistema de Notas - Excluir Aluno</title>
+
+
+</head>
+<body>
+
+    <header>
+    			<div class="nav-list">
+				<ul>
+					<li class="nav-item"><a href="/alunos/todos" class="nav-link">Todos Alunos</a></li>
+					<li class="nav-item"><a href="/alunos/aprovados" class="nav-link">Aprovados</a></li>
+					<li class="nav-item"><a href="/alunos/reprovados" class="nav-link">Reprovados</a></li>
+					<li class="nav-item"><a href="/alunos/cadastrar" class="nav-link">Cadastrar Aluno</a></li>
+					<li class="nav-item"><a href="/alunos/pesquisar" class="nav-link">Pesquisar Aluno</a></li>
+					<li class="nav-item"><a href="/alunos/excluir" class="nav-link">Excluir Aluno</a></li>
+				</ul>
+			</div>   
+        <nav class="nav-bar">
+            <div class="logoNome">Excluir Aluno</div>
+            <div class="login-btt">
+                <button><a href="/backHome">Home</a></button>
+            </div>
+        </nav>
+        
+    </header>
+    
+    <main>
+	    <form class="cadastro-form" action="/alunos/excluirAluno" method="get">
+	   	 	<h2>Excluir Aluno</h2>
+	    
+	        <div class="box">
+	            <input type="number" name="ra" required placeholder="Digite o RA">
+	        </div>
+
+			<div class="alunosList" style="display: block">
+			</div>
+	        <input type="submit" class="btn" value="excluir"> 
+		</form>
+    </main>
+
+</body>
+</html>

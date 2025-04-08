@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/cadastrar.css">
+<title>Sistema de Notas Home</title>
+</head>
+<body>
+	<header>
+
+		<nav class="nav-bar">
+			<div class="logoNome">Cadastrar Aluno</div>
+			<div class="login-btt">
+				<button>
+					<a href="backHome">Home</a>
+				</button>
+			</div>
+		</nav>
+
+	</header>
+
+	<main>
+		<form class="cadastro-form" action="inserir" method="post">
+			<h2>Cadastrar Aluno</h2>
+
+			<div class="box">
+				<input type="text" name="nome" required placeholder="Nome">
+				<input type="text" name="ra" required placeholder="RA">
+			</div>
+
+			<div class="box">
+				<input type="number" name="nota1" placeholder="Nota 01"> <input
+					type="number" name="nota2" placeholder="Nota 02"> <input
+					type="number" name="nota3" placeholder="Nota 03"> <input
+					type="number" name="nota4" placeholder="Nota 04">
+			</div>
+			<input type="submit" class="btn" value="Inserir">
+		</form>
+	</main>
+
+	<script src="assents/validarCadastro.js"></script>
+</body>
+</html>

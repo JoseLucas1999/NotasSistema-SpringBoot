@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1e1e1e;  /* Fundo escuro */
+    color: #ccc;  /* Texto claro */
+}
+
+/* Header */
+header {
+    background-color: #222;
+    padding: 10px 0;
+}
+
+/* Container do nav-bar */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Logo */
+.logo h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Nome do sistema */
+.logoNome {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Menu de navegação */
+.nav-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Exibe os itens da lista na horizontal */
+}
+
+/* Links do menu */
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: block; /* Para garantir que o link ocupe toda a área do item */
+}
+
+/* Itens do menu */
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Ajuste para o botão login */
+.login-btt button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login-btt button a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-btt button:hover {
+    background-color: #2980b9;  /* Azul mais escuro no hover */
+}
+
+.mobile-menu-icon button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+/* Estilo para o menu mobile */
+.mobile-menu {
+    display: none;
+}
+.mobile-menu ul {
+    list-style-type: none;
+}
+
+.mobile-menu .nav-item {
+    margin: 10px 0;
+}
+
+.mobile-menu .nav-link {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.mobile-menu .nav-link:hover {
+    color: #3498db;  /* Azul claro no hover */
+}
+
+.mobile-menu .login-btt {
+    margin-top: 20px;
+}
+
+/* Main */
+main {
+    padding: 20px;
+    background-color: #222;  /* Fundo escuro para o corpo */
+}
+
+h1 {
+    color: #fff;  /* Título branco */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    color: #ccc;  /* Texto claro */
+}
+
+th {
+    background-color: #444;
+    color: #fff;  /* Títulos das colunas brancos */
+}
+
+tr:hover {
+    background-color: #444;  /* Linha de destaque no hover */
+}
+
+tr:nth-child(even) {
+    background-color: #333;  /* Linhas alternadas */
+}
+
+/* Para responsividade (Mobile) */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none; /* Esconde o menu na versão mobile */
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+}
